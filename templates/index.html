@@ -4,17 +4,11 @@
     <title>Emotion Detection</title>
 </head>
 <body>
-    <h1>Upload an Image or Use Webcam for Emotion Detection</h1>
+    <h1>Emotion Detection</h1>
     <video id="video" width="640" height="480" autoplay></video>
     <button id="capture">Capture Photo</button>
-    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
-
-    <!-- Form to upload image -->
-    <form action="/upload-image" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload Image">
-    </form>
-
+    <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+    <div id="emotionResult"></div> <!-- For displaying the detected emotion -->
     <script src="/static/js/webcam.js"></script>
 </body>
 </html>
